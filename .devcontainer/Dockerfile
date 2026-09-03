@@ -9,3 +9,10 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
        clang-format \
        cppcheck \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends \
+       build-essential \
+       gdb \
+       git-lfs \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
