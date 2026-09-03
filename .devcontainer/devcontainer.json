@@ -1,0 +1,25 @@
+{
+  "name": "C Development Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+        "C_Cpp.default.cStandard": "c17",
+        "C_Cpp.default.intelliSenseEngine": "default",
+        "editor.formatOnSave": true,
+        "files.associations": {
+          "*.h": "c"
+        }
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "xaver.clang-format"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
